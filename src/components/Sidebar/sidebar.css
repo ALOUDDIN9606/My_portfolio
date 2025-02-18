@@ -1,0 +1,8 @@
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(115, 114, 114, 0.352);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(97, 96, 96, 0.453);
+  border-radius: 15px;
+}

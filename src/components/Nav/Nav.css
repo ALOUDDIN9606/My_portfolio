@@ -1,0 +1,8 @@
+.active {
+  transition: 0.2s ease;
+}
+.active:hover {
+  background-color: #ffb400;
+}
+/* Custom Colors */
+
