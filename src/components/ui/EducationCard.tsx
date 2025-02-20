@@ -21,7 +21,7 @@ const EducationCard = () => {
   return (
     <div className="space-y-8">
       {educationData.map((edu, index) => (
-        <div key={index} className="flex flex-col sm:flex-row gap-6 bg-white p-6 rounded-lg shadow-md">
+        <div key={index} className="flex border-2 flex-col sm:flex-row gap-6 bg-white p-6 rounded-lg shadow-md">
           {/* Left Section: Institution & Period */}
           <div className="w-full sm:w-2/5">
             <h4 className="text-xl font-bold mb-2 text-gray-900">{edu.institution}</h4>

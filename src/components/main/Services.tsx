@@ -3,7 +3,7 @@ import { FaLaptopCode, FaServer, FaMobileAlt, FaDatabase, FaChartLine, FaCloud }
 
 const Services = () => {
   return (
-    <div className="w-full mb-[70px]">
+    <div className="w-full mt-16 mb-[70px]">
       <Title
   title="Services I Offer"
   info="Providing high-quality web development, backend solutions, and modern technology services tailored to your needs."

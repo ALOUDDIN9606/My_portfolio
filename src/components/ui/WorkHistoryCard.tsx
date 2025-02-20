@@ -1,8 +1,11 @@
+
 const WorkHistoryCard = () => {
     return (
-      <div className="space-y-8">
+      <>
+          <div className="space-y-8">
+
         {/* Job 1 - Full-Stack Developer */}
-        <div className="flex flex-col sm:flex-row gap-6 bg-white p-6 rounded-lg shadow-md">
+        <div className="flex flex-col sm:flex-row gap-6 border-2 bg-white p-6 rounded-lg shadow-md">
           {/* Left Section: Company & Period */}
           <div className="w-full sm:w-2/5">
             <h4 className="text-xl font-bold mb-2 text-gray-900">Tech Solutions Inc.</h4>
@@ -23,7 +26,7 @@ const WorkHistoryCard = () => {
         </div>
   
         {/* Job 2 - Back-End Developer */}
-        <div className="flex flex-col sm:flex-row gap-6 bg-white p-6 rounded-lg shadow-md">
+        <div className="flex flex-col sm:flex-row border-2 gap-6 bg-white p-6 rounded-lg shadow-md">
           {/* Left Section: Company & Period */}
           <div className="w-full sm:w-2/5">
             <h4 className="text-xl font-bold mb-2 text-gray-900">Innovative Solutions</h4>
@@ -44,7 +47,7 @@ const WorkHistoryCard = () => {
         </div>
   
         {/* Job 3 - Freelancer */}
-        <div className="flex flex-col sm:flex-row gap-6 bg-white p-6 rounded-lg shadow-md">
+        <div className="flex flex-col sm:flex-row border-2 gap-6 bg-white p-6 rounded-lg shadow-md">
           {/* Left Section: Freelance & Period */}
           <div className="w-full sm:w-2/5">
             <h4 className="text-xl font-bold mb-2 text-gray-900">Freelance</h4>
@@ -64,6 +67,7 @@ const WorkHistoryCard = () => {
           </div>
         </div>
       </div>
+      </>
     );
   };
   

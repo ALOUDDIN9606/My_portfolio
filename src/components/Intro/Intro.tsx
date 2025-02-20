@@ -47,9 +47,9 @@ const Intro = () => {
         </div>
 
         {/* Tugma */}
-        <button className="mt-6 py-3 px-7 mb-4 rounded-lg text-[16px] md:text-[18px] bg-main-yellow font-medium hover:bg-yellow-600 transition-all">
+        {/* <button className="mt-6 py-3 px-7 mb-4 rounded-lg text-[16px] md:text-[18px] bg-main-yellow font-medium hover:bg-yellow-600 transition-all">
           I am ready for work.
-        </button>
+        </button> */}
       </div>
 
       {/* Avatar rasmi */}

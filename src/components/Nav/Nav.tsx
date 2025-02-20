@@ -11,7 +11,7 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <div className="w-[100px] h-full bg-gradient-to-b from-blue-200 via-gray-200 to-gray-300 flex flex-col items-center justify-between py-10">
-      <CgDarkMode className="text-[38px]" />
+      <CgDarkMode className="text-[38px] cursor-pointer" />
       <nav className="flex flex-col">
 
         {/* Home */}
@@ -38,9 +38,9 @@ const Nav = () => {
           <FaFileCode className="text-[20px]" />
         </NavLink>
 
-        {/* Contact */}
+        {/* Student */}
         <NavLink
-          to="/contact"
+          to="/student"
           className={({ isActive }) =>
             `w-10 h-10 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
               isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
@@ -50,9 +50,9 @@ const Nav = () => {
           <PiStudentBold className="text-[25px]" />
         </NavLink>
 
-        {/* Social Media */}
+        {/* Shopping */}
         <NavLink
-          to="/social"
+          to="/shopping"
           className={({ isActive }) =>
             `w-10 h-10 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
               isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
