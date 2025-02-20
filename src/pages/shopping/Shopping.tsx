@@ -37,7 +37,7 @@ const Shopping = () => {
 
       <div className="flex flex-col items-center gap-10">
         {products.map((product) => (
-          <div key={product.id} className="w-full border-2 rounded-lg p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
+          <div key={product.id} className="w-full bg-white border-2 rounded-lg p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
             <div className="mb-4 text-2xl">{product.icon}</div>
             <h3 className="text-2xl font-semibold">{product.title}</h3>
             <p className="text-gray-700 text-xl">{product.description}</p>

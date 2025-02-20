@@ -6,7 +6,7 @@ import img from "../../assets/images/My-img.jpg"
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar w-[22%] h-full overflow-y-auto bg-gradient-to-b from-blue-200 via-gray-200 to-gray-300 p-8 flex flex-col items-center rounded-lg shadow-lg">
+    <aside className="sidebar w-[22%] h-full overflow-y-auto bg-gradient-to-b from-blue-300 via-gray-300 to-gray-200 p-8 flex flex-col items-center rounded-lg shadow-lg">
       {/* Profile */}
       <img
         src={img}
