@@ -39,8 +39,8 @@ const Sidebar = () => {
           { label: "Address", value: "Tashkent, Uzb" },
         ].map((item, index) => (
           <li key={index} className="flex items-center justify-between mb-3">
-            <span className="py-1 px-4 rounded-md bg-main-yellow text-sm">{item.label}</span>
-            <span className={item.isAvailable ? "text-green-500" : "text-gray-700"}>{item.value}</span>
+            <span className="py-1 px-4 rounded-md bg-main-yellow text-lg">{item.label}</span>
+            <span className={item.isAvailable ? "text-green-500" : "text-gray-700 text-lg"}>{item.value}</span>
           </li>
         ))}
       </ul>
