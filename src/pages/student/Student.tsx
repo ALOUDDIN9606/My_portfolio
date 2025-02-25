@@ -23,14 +23,14 @@ const Student = () => {
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
         About Me
       </h2>
-      <p className="text-lg md:text-base text-gray-600 mb-2">
+      <p className="text-sm md:text-base text-gray-600 mb-2">
         My name is <b>Alouddin Xonimqulov</b>. I was born on
         March 6, 1996, in Termez district, Surxondaryo region. I am a calm and
         disciplined person who highly values order and discipline. I always set
         ambitious goals for myself and strive to overcome any obstacles with
         determination and hard work. 
       </p>
-      <p className="text-lg md:text-base text-gray-600 mb-14">
+      <p className="text-sm md:text-base text-gray-600 mb-14">
         My father played a significant role in guiding me into the world of
         programming, and thanks to his support, I have achieved my current
         results. My ultimate goal is to become a highly skilled specialist in my
