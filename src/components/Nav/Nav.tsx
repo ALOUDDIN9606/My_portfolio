@@ -38,22 +38,22 @@ const Nav = () => {
           { to: "/about", icon: <BiSolidMessage /> },
         ].map(({ to, icon }, index) => (
           <NavLink
-            key={index}
-            to={to}
-            className={({ isActive }) =>
-              `relative flex items-center rounded-full justify-center transition-all duration-300 ${
-                isMobile ? "w-14 h-14 rounded-full" : "w-12 h-12 mb-6"
-              } ${isActive ? "bg-blue-500 text-white scale-110 shadow-lg" : "bg-gray-600 text-white"}`
-            }
-          >
-            <motion.div
-              animate={{ scale: isMobile ? 1.3 : 1 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="text-[26px]"
-            >
-              {icon}
-            </motion.div>
-          </NavLink>
+  key={index}
+  to={to}
+  className={({ isActive }) =>
+    `relative flex items-center rounded-full mb-4 justify-center transition-all duration-300 
+    ${isMobile ? "w-10 h-10 text-[18px]" : "w-14 h-14 text-[26px]"} 
+    ${isActive ? "bg-blue-500 text-white scale-105 shadow-lg" : "bg-gray-600 text-white"}`
+  }
+>
+  <motion.div
+    animate={{ scale: isMobile ? 1 : 1 }}
+    transition={{ type: "spring", stiffness: 300 }}
+  >
+    {icon}
+  </motion.div>
+</NavLink>
+
         ))}
       </nav>
     </div>

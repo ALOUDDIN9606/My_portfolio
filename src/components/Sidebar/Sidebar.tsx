@@ -20,7 +20,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <aside
-        className={`sidebar w-2/4 md:w-[40%] lg:w-[22%] h-full overflow-y-auto bg-white p-8 flex flex-col items-center shadow-lg
+        className={`sidebar w-3/4 md:w-[40%] lg:w-[22%] h-full overflow-y-auto bg-white p-8 flex flex-col items-center shadow-lg
           fixed top-0 left-0 z-40 transition-transform duration-300
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 lg:relative lg:flex`}
