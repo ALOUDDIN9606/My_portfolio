@@ -89,11 +89,13 @@ const Sidebar = () => {
             { title: "Nest.js", width: "80%" },
             { title: "Express.js", width: "70%" },
             { title: "ORM/ODM", width: "75%" },
-            { title: "SQL/MongoDB/PostgreSQL", width: "80%" },
+            { title: "SQL", width: "80%" },
+            { title: "MongoDB", width: "75%" },
+            { title: "PostgreSQL", width: "90%" },
             { title: "Swagger/Postman", width: "70%" },
           ].map((skill, index) => (
             <Progress key={index} title={skill.title} width={skill.width} />
-          ))}
+           ))}
         </div>
 
         <div className="w-full mb-10">
@@ -118,7 +120,7 @@ const Sidebar = () => {
             "React hooks",
           ].map((skill, index) => (
             <div key={index} className="flex items-center mb-3">
-              <MdContentCopy className="text-xl text-main-yellow mr-4" />
+              <MdContentCopy className="text-lg text-main-yellow mr-4" />
               <p className="text-lg text-gray-600">{skill}</p>
             </div>
           ))}
