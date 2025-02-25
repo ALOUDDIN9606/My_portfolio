@@ -19,11 +19,30 @@ const Student = () => {
 
   return (
     <div className="p-6 md:p-10">
+      {/* About Me Section */}
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+        About Me
+      </h2>
+      <p className="text-lg md:text-base text-gray-600 mb-2">
+        My name is <b>Alouddin Xonimqulov</b>. I was born on
+        March 6, 1996, in Termez district, Surxondaryo region. I am a calm and
+        disciplined person who highly values order and discipline. I always set
+        ambitious goals for myself and strive to overcome any obstacles with
+        determination and hard work. 
+      </p>
+      <p className="text-lg md:text-base text-gray-600 mb-14">
+        My father played a significant role in guiding me into the world of
+        programming, and thanks to his support, I have achieved my current
+        results. My ultimate goal is to become a highly skilled specialist in my
+        field, contribute significantly to my company, and benefit my nation by
+        becoming an expert developer.
+      </p>
+
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
         My Education & Specializations
       </h2>
 
-      {/* O'qigan universitetlar */}
+      {/* Education Section */}
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
         {educationData.map((edu) => (
           <div
@@ -40,7 +59,7 @@ const Student = () => {
         ))}
       </div>
 
-      {/* Dasturlash bo'yicha tajriba */}
+      {/* Programming Skills */}
       <div className="mt-10">
         <h3 className="text-lg md:text-2xl font-semibold text-gray-700 flex items-center">
           <FaLaptopCode className="mr-2 text-green-600" />
@@ -56,16 +75,17 @@ const Student = () => {
         </ul>
       </div>
 
-      {/* Ish tajribasi */}
+      {/* Work Experience */}
       <div className="mt-10">
         <h3 className="text-lg md:text-2xl font-semibold text-gray-700 flex items-center">
           <MdWork className="mr-2 text-yellow-600" />
           My Work Experience
         </h3>
         <p className="text-sm md:text-base text-gray-600 mt-2">
-          While I may not have formal work experience, during my studies, I have worked on multiple real-world projects that can be practically implemented.
-          These include e-commerce platforms, CRM systems, and API service projects.
-          You can explore my practical work on my GitHub page.
+          While I may not have formal work experience, during my studies, I have
+          worked on multiple real-world projects that can be practically
+          implemented. These include e-commerce platforms, CRM systems, and API
+          service projects. You can explore my practical work on my GitHub page.
         </p>
 
         <h3 className="text-lg md:text-2xl font-semibold text-gray-700 mt-10 flex items-center">
@@ -73,9 +93,11 @@ const Student = () => {
           Mening ish tajribam
         </h3>
         <p className="text-sm md:text-base text-gray-600 mt-2">
-          Rasmiy ish tajribam bo'lmasa-da, o'qish davomida men amalda amalga oshirilishi mumkin bo'lgan bir nechta real loyihalar ustida ishladim.
-          Bularga elektron tijorat platformalari, CRM tizimlari va API xizmati loyihalari kiradi.
-          Mening amaliy ishimni GitHub sahifamda o'rganishingiz mumkin.
+          Rasmiy ish tajribam bo'lmasa-da, o'qish davomida men amalda amalga
+          oshirilishi mumkin bo'lgan bir nechta real loyihalar ustida ishladim.
+          Bularga elektron tijorat platformalari, CRM tizimlari va API xizmati
+          loyihalari kiradi. Mening amaliy ishimni GitHub sahifamda
+          o'rganishingiz mumkin.
         </p>
       </div>
     </div>
