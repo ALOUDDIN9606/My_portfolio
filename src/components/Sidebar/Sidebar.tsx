@@ -10,7 +10,6 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Burger menyu tugmasi (faqat kichik ekranda) */}
       <button
         className="fixed top-4 left-4 z-50 text-3xl text-main-yellow lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
@@ -21,7 +20,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <aside
         className={`sidebar w-3/4 md:w-[40%] lg:w-[22%] h-full overflow-y-auto bg-white p-8 flex flex-col items-center shadow-lg
-          fixed top-0 left-0 z-40 transition-transform duration-300
+          fixed top-0 left-0 z-40 transition-transform duration-300 pb-24
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 lg:relative lg:flex`}
       >
