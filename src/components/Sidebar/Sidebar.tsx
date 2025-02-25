@@ -31,44 +31,32 @@ const Sidebar = () => {
           alt="My images"
           className="w-3/4 rounded-xl mb-3 hover:scale-105 transition-transform duration-300"
         />
-        <h2 className="mb-2 text-2xl font-semibold text-black hover:text-main-yellow transition-colors duration-300">
-          Alouddin Xonimqulov
-        </h2>
-        <p className=" text-xl text-black">Full-Stack Developer</p>
-        <p className="text-xl text-black mb-8">Node.Js/React.Js</p>
+        <h2 className="mb-2 text-xl lg:text-2xl font-semibold text-black hover:text-main-yellow transition-colors duration-300">
+  Alouddin Xonimqulov
+</h2>
+<p className=" text-lg lg:text-xl text-black">Full-Stack Developer</p>
+<p className="text-lg lg:text-xl text-black mb-8">Node.Js/React.Js</p>
 
-        {/* Social Links */}
-        {/* <div className="flex w-full gap-x-4 justify-center mb-8">
-          {[...Array(6)].map((_, index) => (
-            <div
-              key={index}
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-main-yellow hover:bg-yellow-500 transition-colors duration-300"
-            >
-              <FaFacebookF className="text-lg text-white" />
-            </div>
-          ))}
-        </div> */}
+<ul className="flex flex-col w-full mb-8 text-sm lg:text-lg">
+  {[
+    { label: "Age", value: "28" },
+    { label: "Freelance", value: "Available", isAvailable: true },
+    { label: "Phone", value: "+998 93 693 41 43" },
+    { label: "Address", value: "Tashkent, Uzb" },
+  ].map((item, index) => (
+    <li key={index} className="flex items-center justify-between mb-3">
+      <span className="py-1 px-4 rounded-md bg-main-yellow text-sm lg:text-lg">
+        {item.label}
+      </span>
+      <span
+        className={item.isAvailable ? "text-green-500" : "text-black text-sm lg:text-lg"}
+      >
+        {item.value}
+      </span>
+    </li>
+  ))}
+</ul>
 
-        {/* Info */}
-        <ul className="flex flex-col w-full mb-8">
-          {[
-            { label: "Age", value: "28" },
-            { label: "Freelance", value: "Available", isAvailable: true },
-            { label: "Phone", value: "+998 93 693 41 43" },
-            { label: "Address", value: "Tashkent, Uzb" },
-          ].map((item, index) => (
-            <li key={index} className="flex items-center justify-between mb-3">
-              <span className="py-1 px-4 rounded-md bg-main-yellow text-lg">
-                {item.label}
-              </span>
-              <span
-                className={item.isAvailable ? "text-green-500" : "text-black text-lg"}
-              >
-                {item.value}
-              </span>
-            </li>
-          ))}
-        </ul>
 
         {/* Languages */}
         <h3 className="mb-2 text-2xl font-medium text-gray-800">Languages</h3>
