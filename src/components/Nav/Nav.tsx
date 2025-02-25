@@ -10,7 +10,7 @@ import "./Nav.css";
 
 const Nav = () => {
   return (
-    <div className="w-[100px] h-full bg-gradient-to-b from-blue-200 via-gray-200 to-gray-300 flex flex-col items-center justify-between py-10">
+    <div className="w-[100px] h-full bg-white flex flex-col items-center justify-between py-10">
       {/* <CgDarkMode className="text-[38px] cursor-pointer" /> */}
       <nav className="flex flex-col mt-14">
 

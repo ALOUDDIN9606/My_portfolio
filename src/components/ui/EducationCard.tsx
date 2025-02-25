@@ -6,7 +6,7 @@ const EducationCard = () => {
       period: "2022 - 2023 (10 months)",
       certificate: "Front-End Web Development Certification",
       description:
-        "Successfully completed a 10-month intensive training program in Front-End Web Development. Gained expertise in HTML, CSS, JavaScript, React, and modern UI frameworks, with a strong focus on responsive design, performance optimization, and scalable architecture.",
+        "I received in-depth training in Front-End Web Development at the Termez branch of IT Center for 10 months under the guidance of qualified instructors. During this course, I mastered HTML, CSS, Bootstrap, SASS, and JavaScript technologies and gained experience in creating user-friendly, fast, and responsive web interfaces. I learned to work with modern UI frameworks and design patterns, focused on ensuring fast page loading and using best practices in code structure. During the course, I had the opportunity to apply my knowledge in practice by working on independent projects.",
     },
     {
       institution: "Najot Ta'lim, Tashkent",
@@ -14,7 +14,7 @@ const EducationCard = () => {
       period: "Sen 2023 - 2025 Fev",
       certificate: "Full-Stack (Node.js & React.js) Certification",
       description:
-        "Completed an in-depth Full-Stack Development program covering Node.js, Express.js, PostgreSQL, MongoDB, React.js, Redux, and advanced software architecture. Specialized in building scalable, high-performance applications with a strong emphasis on real-world project experience.",
+        "I studied the Full-Stack (Node.js and React.js) course for 15 months at the Najot Ta'lim Training Center in Tashkent under the guidance of qualified instructors. During this course, I gained solid knowledge of Node.js, Express.js, NestJS, PostgreSQL, MongoDB, React.js, Redux, and advanced software architecture. By working on real projects, I gained practical experience in creating scalable and high-performance applications. I learned how to effectively implement backend and frontend integration and developed skills in working with technologies such as CI/CD, Docker, and AWS. Having successfully completed the course, I continue my career as a fully qualified Full-Stack developer.",
     },
   ];
 

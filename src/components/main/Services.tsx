@@ -1,5 +1,5 @@
 import ServiceCard from "../ui/ServiceCard";
-import { FaLaptopCode, FaServer, FaMobileAlt, FaDatabase, FaChartLine, FaCloud } from "react-icons/fa";import Title from "../ui/Title";
+import { FaLaptopCode, FaServer, FaMobileAlt, FaDatabase, FaChartLine, FaCloud, FaCode } from "react-icons/fa";import Title from "../ui/Title";
 
 const Services = () => {
   return (
@@ -17,14 +17,15 @@ const Services = () => {
         />
         <ServiceCard
           title="Backend Development"
-          info="Creating secure, scalable, and high-performance backend systems using Node.js, NestJS, and Express."
+          info="Creating secure, scalable, and high-performance backend systems using Node.js, NestJS, ( Express or Sequelize )."
           icon={<FaServer />}
         />
         <ServiceCard
-          title="Mobile App Development"
-          info="Developing cross-platform mobile applications using React Native and Flutter."
-          icon={<FaMobileAlt />}
-        />
+  title="Full-Stack Development"
+  info="Building secure, scalable, and high-performance web applications using Node.js, NestJS, Express, Sequelize, and React."
+  icon={<FaCode />}
+/>
+
         <ServiceCard
           title="Database Management"
           info="Designing efficient databases with PostgreSQL, MongoDB, and MySQL."

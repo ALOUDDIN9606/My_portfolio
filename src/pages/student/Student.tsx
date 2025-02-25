@@ -58,14 +58,23 @@ const Student = () => {
 
       {/* Ish tajribasi */}
       <div className="mt-10">
-        <h3 className="text-2xl font-semibold text-gray-700 flex items-center">
+      <h3 className="text-2xl font-semibold text-gray-700 flex items-center">
+       <MdWork className="mr-2 text-yellow-600" />
+       My Work Experience
+      </h3>
+      <p className="text-gray-600 mt-2">
+        While I may not have formal work experience, during my studies, I have worked on multiple real-world projects that can be practically implemented.  
+        These include e-commerce platforms, CRM systems, and API service projects.  
+        You can explore my practical work on my GitHub page.
+      </p>
+
+
+        <h3 className="text-2xl font-semibold text-gray-700 mt-10 flex items-center">
           <MdWork className="mr-2 text-yellow-600" />
-          Work Experience
+          Mening ish tajribam
         </h3>
         <p className="text-gray-600 mt-2">
-          Men Full-Stack dasturchi sifatida bir nechta loyihalarda ishlaganman.
-          O‘z ichiga e-commerce, CRM tizimlari va API xizmati loyihalarini
-          olgan. GitHub sahifam orqali amaliy ishlarimni ko‘rishingiz mumkin.
+        Rasmiy ish tajribam bo'lmasa-da, o'qish davomida men amalda amalga oshirilishi mumkin bo'lgan bir nechta real loyihalar ustida ishladim. Bularga elektron tijorat platformalari, CRM tizimlari va API xizmati loyihalari kiradi. Mening amaliy ishimni GitHub sahifamda o'rganishingiz mumkin.
         </p>
       </div>
     </div>

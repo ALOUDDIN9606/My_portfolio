@@ -6,16 +6,16 @@ import img from "../../assets/images/My-img.jpg"
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar w-[22%] h-full overflow-y-auto bg-gradient-to-b from-blue-300 via-gray-300 to-gray-200 p-8 flex flex-col items-center rounded-lg shadow-lg">
+    <aside className="sidebar w-[22%] h-full overflow-y-auto bg-white p-8 flex flex-col items-center shadow-lg">
       {/* Profile */}
       <img
         src={img}
         alt="My images"
-        className="w-3/4 rounded-xl mb-3 border-4 border-slate-400 hover:scale-105 transition-transform duration-300"
+        className="w-3/4 rounded-xl mb-3 hover:scale-105 transition-transform duration-300"
       />
-      <h2 className="mb-2 text-2xl font-semibold text-gray-800 hover:text-main-yellow transition-colors duration-300">Alouddin Xonimqulov</h2>
-      <p className=" text-xl text-gray-700">Full-Stack Developer</p>
-      <p className="text-xl text-gray-700">Node.Js/React.Js</p>
+      <h2 className="mb-2 text-2xl font-semibold text-black hover:text-main-yellow transition-colors duration-300">Alouddin Xonimqulov</h2>
+      <p className=" text-xl text-black">Full-Stack Developer</p>
+      <p className="text-xl text-black">Node.Js/React.Js</p>
 
       {/* Social Links */}
       <div className="flex w-full gap-x-4 justify-center mb-8">
@@ -40,7 +40,7 @@ const Sidebar = () => {
         ].map((item, index) => (
           <li key={index} className="flex items-center justify-between mb-3">
             <span className="py-1 px-4 rounded-md bg-main-yellow text-lg">{item.label}</span>
-            <span className={item.isAvailable ? "text-green-500" : "text-gray-700 text-lg"}>{item.value}</span>
+            <span className={item.isAvailable ? "text-green-500" : "text-black text-lg"}>{item.value}</span>
           </li>
         ))}
       </ul>

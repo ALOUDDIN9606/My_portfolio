@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="h-screen w-full flex bg-blue-100">
+    <div className="h-screen w-full flex bg-slate-100">
       <Sidebar />
       <main className="main w-[calc(78%-100px)] pt-10 h-full px-7 overflow-y-auto">
         <Outlet /> {/* Router sahifalari shu yerda ko'rsatiladi */}
