@@ -1,92 +1,61 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { RiHome2Fill } from "react-icons/ri";
-import { FaFileCode } from "react-icons/fa";
+import { FaFileCode, FaShoppingBag } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
-import { FaShoppingBag } from "react-icons/fa";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { BiSolidMessage } from "react-icons/bi";
-// import { CgDarkMode } from "react-icons/cg";
+import { motion } from "framer-motion";
 import "./Nav.css";
 
 const Nav = () => {
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = screenSize < 768;
+  const isTablet = screenSize >= 768 && screenSize < 1024;
+
   return (
-    <div className="w-[100px] h-full bg-white flex flex-col items-center justify-between py-10">
-      {/* <CgDarkMode className="text-[38px] cursor-pointer" /> */}
-      <nav className="flex flex-col mt-14">
-
-        {/* Home */}
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <RiHome2Fill className="text-[28px]" />
-        </NavLink>
-
-        {/* Work */}
-        <NavLink
-          to="/work"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <FaFileCode className="text-[25px]" />
-        </NavLink>
-
-        {/* Student */}
-        <NavLink
-          to="/student"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <PiStudentBold className="text-[28px]" />
-        </NavLink>
-
-        {/* Shopping */}
-        <NavLink
-          to="/shopping"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <FaShoppingBag className="text-[25px]" />
-        </NavLink>
-
-        {/* Messages */}
-        <NavLink
-          to="/messages"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <IoShareSocialSharp className="text-[28px]" />
-        </NavLink>
-
-        {/* About */}
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `w-12 h-12 flex items-center justify-center mb-6 rounded-full transition-colors duration-300 ${
-              isActive ? "bg-blue-500 text-white" : "bg-gray-600 text-white"
-            }`
-          }
-        >
-          <BiSolidMessage className="text-[25px]" />
-        </NavLink>
+    <div
+      className={`fixed z-50 bg-white shadow-lg transition-transform duration-300 ${
+        isMobile
+          ? "bottom-0 left-0 w-full flex justify-around py-3 border-t border-gray-300"
+          : "top-0 right-0 w-[100px] h-full flex flex-col items-center justify-between py-10"
+      }`}
+    >
+      <nav className={`flex ${isMobile ? "w-full justify-around" : "flex-col mt-14"}`}>
+        {[
+          { to: "/", icon: <RiHome2Fill /> },
+          { to: "/work", icon: <FaFileCode /> },
+          { to: "/student", icon: <PiStudentBold /> },
+          { to: "/shopping", icon: <FaShoppingBag /> },
+          { to: "/messages", icon: <IoShareSocialSharp /> },
+          { to: "/about", icon: <BiSolidMessage /> },
+        ].map(({ to, icon }, index) => (
+          <NavLink
+            key={index}
+            to={to}
+            className={({ isActive }) =>
+              `relative flex items-center rounded-full justify-center transition-all duration-300 ${
+                isMobile ? "w-14 h-14 rounded-full" : "w-12 h-12 mb-6"
+              } ${isActive ? "bg-blue-500 text-white scale-110 shadow-lg" : "bg-gray-600 text-white"}`
+            }
+          >
+            <motion.div
+              animate={{ scale: isMobile ? 1.3 : 1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="text-[26px]"
+            >
+              {icon}
+            </motion.div>
+          </NavLink>
+        ))}
       </nav>
-      <span></span>
     </div>
   );
 };

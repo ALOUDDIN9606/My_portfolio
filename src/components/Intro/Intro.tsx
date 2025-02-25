@@ -1,8 +1,9 @@
 const Intro = () => {
   return (
-    <div className="w-full md:px-4 lg:px-8 flex lg:flex-row items-center justify-between pt-10 bg-white rounded-lg mb-16 shadow-lg">
-      <div className="w-[65%] text-center lg:text-left">
-        <h1 className=" text-[36px] md:text-[42px] font-bold mb-5">
+    <div className="w-full px-4 md:px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between pt-10 bg-white rounded-lg mb-16 shadow-lg">
+      {/* Left Side - Text Content */}
+      <div className="w-full lg:w-[60%] text-center lg:text-left">
+        <h1 className="text-[32px] sm:text-[36px] md:text-[42px] font-bold mb-5">
           I’m{" "}
           <span className="text-main-yellow">Alouddin Xonimqulov</span>
           <br />
@@ -13,8 +14,8 @@ const Intro = () => {
           Crafting high-performance applications with a strong coding foundation.
         </p>
 
-        {/* Texnologiyalar ro'yxati */}
-        <div className="flex flex-wrap gap-2 md:gap-3 mx-auto lg:mx-0">
+        {/* Technologies List */}
+        <div className="flex flex-wrap mb-4 justify-center lg:justify-start gap-2 md:gap-3 mx-auto lg:mx-0">
           {[
             "Node.js",
             "JavaScript",
@@ -46,18 +47,18 @@ const Intro = () => {
           ))}
         </div>
 
-        {/* Tugma */}
-        {/* <button className="mt-6 py-3 px-7 mb-4 rounded-lg text-[16px] md:text-[18px] bg-main-yellow font-medium hover:bg-yellow-600 transition-all">
+        {/* Button */}
+        {/* <button className="mt-6 py-3 px-7 text-[16px] md:text-[18px] bg-main-yellow font-medium hover:bg-yellow-600 transition-all rounded-lg">
           I am ready for work.
         </button> */}
       </div>
 
-      {/* Avatar rasmi */}
-      <div className="w-[35%]">
+      {/* Right Side - Avatar Image */}
+      <div className="w-full lg:w-[40%] flex justify-center mt-10 lg:mt-0">
         <img
           src="/images/intro.png"
           alt="avatar"
-          className="w-full mt-8 lg:mt-0 animate-fadeIn"
+          className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-full animate-fadeIn"
         />
       </div>
     </div>

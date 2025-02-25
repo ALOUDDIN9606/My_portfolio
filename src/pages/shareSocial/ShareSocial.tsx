@@ -37,21 +37,21 @@ const socialLinks = [
 
 const ShareSocial = () => {
   return (
-    <div className="p-10">
-      <h2 className="text-4xl font-bold text-gray-800 mb-2">Let's Connect!</h2>
-      <p className="text-gray-600 text-xl mb-10">
+    <div className="p-4 sm:p-8 md:p-10">
+      <h2 className="text-4xl font-bold text-gray-800 mb-2 text-center">Let's Connect!</h2>
+      <p className="text-gray-600 text-xl mb-10 text-center">
         Feel free to reach out to me on any of these platforms.
       </p>
 
-      {/* Ijtimoiy tarmoqlar */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      {/* MEDIA MOSLASHUVCHI DIV */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {socialLinks.map((social) => (
           <a
             key={social.id}
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group flex items-center px-5 py-10 rounded-lg shadow-md transition-transform transform hover:scale-105 ${social.bgColor}`}
+            className={`group flex items-center px-5 py-6 sm:py-8 rounded-lg shadow-md transition-transform transform hover:scale-105 ${social.bgColor}`}
           >
             <div className="text-3xl">{social.icon}</div>
             <div className="ml-4">

@@ -1,5 +1,5 @@
 import ServiceCard from "../ui/ServiceCard";
-import { FaLaptopCode, FaServer, FaMobileAlt, FaDatabase, FaChartLine, FaCloud, FaCode } from "react-icons/fa";import Title from "../ui/Title";
+import { FaLaptopCode, FaServer, FaDatabase, FaChartLine, FaCloud, FaCode } from "react-icons/fa";import Title from "../ui/Title";
 
 const Services = () => {
   return (
@@ -21,9 +21,9 @@ const Services = () => {
           icon={<FaServer />}
         />
         <ServiceCard
-  title="Full-Stack Development"
-  info="Building secure, scalable, and high-performance web applications using Node.js, NestJS, Express, Sequelize, and React."
-  icon={<FaCode />}
+          title="Full-Stack Development"
+          info="Building secure, scalable, and high-performance web applications using Node.js, NestJS, Express, Sequelize, and React."
+          icon={<FaCode />}
 />
 
         <ServiceCard
