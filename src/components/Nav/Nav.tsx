@@ -18,7 +18,7 @@ const Nav = () => {
   }, []);
 
   const isMobile = screenSize < 768;
-  const isTablet = screenSize >= 768 && screenSize < 1024;
+  // const isTablet = screenSize >= 768 && screenSize < 1024;
 
   return (
     <div
